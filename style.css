@@ -8,8 +8,10 @@
 body{
     height: 100vh;
     background: #066acd;
-	background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	/* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+	background-image: linear-gradient(to right top, #6fcd93, #49cdaf, #28cac9, #30c5dc, #55bee7, #6cb7ef, #8aaef0, #a9a3e9, #cb92dc, #e980c0, #fc7099, #ff6b6b);
 }
+
 .container{
     width: 40%;
     top: 50%;
@@ -25,6 +27,7 @@ body{
 	-moz-box-shadow: 20px 20px 100px -10px rgba(0,0,0,0.3);
 	box-shadow: 20px 20px 100px -10px rgba(0,0,0,0.5);
 }
+
 #newtask{
     position: relative;
     padding: 30px 20px;
@@ -41,8 +44,11 @@ body{
     font-family: 'Roboto', 'JetBrains Mono', 'Poppins', sans-serif;
     font-size: 15px;
     border: 2px solid #d1d3d4;
+	text-shadow: 1px 1px 2.5px black;
 }
-
+#newtask input::placeholder {
+	text-shadow: none;
+}
 #newtask input:focus{
     outline: none;
     border-color: #0d75ec;
@@ -64,7 +70,7 @@ body{
     height: 45px;
     border-radius: 5px;
     font-family: 'Roboto', 'Montserrat', 'JetBrains Mono', 'Poppins', sans-serif;
-	transition: .1s;
+	transition: .3s;
 }
 #newtask button:hover {
 	color: #baffd4;
@@ -80,6 +86,7 @@ body{
 #newtask button:active {
 	transform: translate(3px, 3px);
 }
+
 #tasks{
     border-radius: 10px;
     width: 100%;
@@ -88,8 +95,9 @@ body{
     padding: 30px 20px;
     margin-top: 10px;
 }
-
 .task{
+	text-shadow: 1px 1px 3px black;
+	text-shadow: 1px 1px 2.5px black;
 	box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.5) inset;
     border-radius: 5px;
     align-items: center;
@@ -118,13 +126,9 @@ body{
     width: 40px;
     border-radius: 5px;
 	box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
-	transition: .1s;
+	transition: .3s;
 }
 .task button:hover {
-	text-shadow: 1px 1px 5px #ff666b,
-                 1px 1px 10px #ff666b,
-                 1px 1px 20px #ff666b,
-                 1px 1px 30px #ff666b;
 	box-shadow: 1px 1px 5px #ff666b,
 				1px 1px 10px #ff666b,
 				1px 1px 20px #ff666b,
