@@ -58,15 +58,15 @@ body{
     font-weight: 500;
     font-size: 16px;
     background-color: #0d75ec;
-	background-color: #02bf34;
-	-webkit-box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.5);
-	-moz-box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.5); border: none;
-	box-shadow: 5px 20px 20px -10px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 8px 20px 20px -10px rgba(0,0,0,0.4);
+	-moz-box-shadow: 8px 20px 20px -10px rgba(0,0,0,0.4);
+	box-shadow: 8px 20px 20px -10px rgba(0,0,0,0.4);
     color: #ffffff;
     cursor: pointer;
     outline: none;
     width: 20%;
     height: 45px;
+	border: none;
     border-radius: 5px;
     font-family: 'Roboto', 'Montserrat', 'JetBrains Mono', 'Poppins', sans-serif;
 	transition: .3s;
@@ -77,10 +77,10 @@ body{
                  1px 1px 10px #baffd4,
                  1px 1px 20px #baffd4,
                  1px 1px 30px #baffd4;
-	box-shadow: 1px 1px 5px #66ff9e,
-				1px 1px 10px #66ff9e,
-				1px 1px 20px #66ff9e,
-                1px 1px 30px #66ff9e;
+	box-shadow: 1px 1px 5px #0d75ec,
+				1px 1px 10px #0d75ec,
+				1px 1px 20px #0d75ec,
+                1px 1px 30px #0d75ec;
 }
 #newtask button:active {
 	transform: translate(3px, 3px);
