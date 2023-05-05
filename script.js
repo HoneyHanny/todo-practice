@@ -1,4 +1,4 @@
-var pushFunction =  function push() {
+var pushPointer = function push() {
 	if (document.querySelector('#newtask input').value.length == 0) {
 		alert("Kindly Enter Task Name!!!")
 	} else {
@@ -30,9 +30,9 @@ var pushFunction =  function push() {
 	}
 }
 
-document.querySelector('#push').onclick = pushFunction
+document.querySelector('#push').onclick = pushPointer
+
 document.addEventListener('keydown', function() {
-	if (event.key != "Enter")
-		return;
-	pushFunction()
+	if (event.key == "Enter")
+		pushPointer()
 })
